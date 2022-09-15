@@ -28,7 +28,7 @@ jobs:
 
     # Run open source static analysis tools
     - name: Run MSDO
-      uses: microsoft/security-devops-action@v1
+      uses: microsoft/security-devops-action@preview
       id: msdo
 
     # - name: Run MSDO
