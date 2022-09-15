@@ -1,7 +1,7 @@
 # boandron-workflow-windows-latest
 # docs are in the repo
 
-name: [boandron] Microsoft Security DevOps self-hosted
+name: boandron Microsoft Security DevOps self-hosted
 on: push
 
 jobs:
