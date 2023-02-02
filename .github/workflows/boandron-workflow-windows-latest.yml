@@ -31,8 +31,7 @@ jobs:
       uses: microsoft/security-devops-action@preview
       id: msdo
       with:
-        categories: 'sbom'
-
+        categories: 'code'
 
     # - name: Run MSDO
     #   uses: boandron/security-devops-action@main
