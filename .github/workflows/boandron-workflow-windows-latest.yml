@@ -30,9 +30,8 @@ jobs:
     - name: Run MSDO
       uses: microsoft/security-devops-action@preview
       id: msdo
-      with:
-        categories: 'secrets'
-        tools: 'credscan'
+      with:        
+        tools: 'credscan, antimalware, iacscanner'
 
     # - name: Run MSDO
     #   uses: boandron/security-devops-action@main
