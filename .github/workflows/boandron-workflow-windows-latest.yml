@@ -31,7 +31,7 @@ jobs:
       uses: microsoft/security-devops-action@preview
       id: msdo
       with:        
-        tools: 'credscan, antimalware, iacscanner'
+        tools: 'credscan, antimalware, iacfilescanner'
 
     # - name: Run MSDO
     #   uses: boandron/security-devops-action@main
