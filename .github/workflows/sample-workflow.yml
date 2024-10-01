@@ -22,10 +22,24 @@ jobs:
       # Checkout your code repository to scan
     - uses: actions/checkout@v3
 
+    - name: Make some Malware
+      shell: pwsh
+      run: |
+        'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > D:/a/security-devops-action/security-devops-action/definitelyNotMalware.trustme
+        Write-Host 'Malware created'
+
+
       # Run analyzers
     - name: Run Microsoft Security DevOps Analysis
       uses: microsoft/security-devops-action@v1
       id: msdo
+
+    - name: Check Malware
+      shell: pwsh
+      run: |
+        dir D:/a/security-devops-action/security-devops-action
+        Write-Host 'Check complete'
+      
 
       # Upload alerts to the Security tab
     - name: Upload alerts to Security tab
